@@ -7,66 +7,56 @@
     <link rel="stylesheet" href="css/libs/google-fonts.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body> 
-
+<body>
     <div class="container">
         <h1 class="center">Game Typer</h1>
-
-        <p class="frase center">Esta frase tem belas seis palavras.</p>
+        <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
         <ul class="informacoes center">
             <li>
                 <i class="small material-icons icones">description</i>
-                <span id="tamanho-frase">5</span> Palavras
+                <span id="tamanho-frase">5</span> palavras
             </li>
             <li>
                 <i class="small material-icons icones">query_builder</i>
-                <span id="tempo-digitacao">10</span> Segundos
+                <span id="tempo-digitacao">10</span> segundos
             </li>
-        </ul>   
-                                        <!--Linhas e colunas-->
-        <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+        </ul>
+
+        <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
 
         <div class="botoes">
-              <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">restore</i></a>
-
+            <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">restore</i>
+            </a>
         </div>
 
         <ul class="center">
-            <li><span id="contador-caracteres">0</span> Caracteres</li>
-            <li><span id="contador-palavras">0</span> Palavras</li>
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
         </ul>
 
-    <section class="placar">
-        <h3 class="center">Placar</h3>
-        <table class="centered bordered">
-            <thead>
-                <tr>
-                    <th>Usuário</th>
-                    <th>No. de palavras</th>
-                    <th>Remove</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Usuario Padrão</td>
-                    <td>10</td>
-                    <td>
-                        <a href="#" class="botao-remover">
-                            <i class="small material-icons">delete</i>
-                        </a>
-                    </td> 
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>No. de palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-
+                </tbody>
+            </table>
+        </section>
     </div>
 
-
-
     <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+
 </body>
 </html>
