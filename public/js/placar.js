@@ -1,3 +1,5 @@
+$("#botao-placar").click(mostraPlacar);
+
 function inserePlacar() {
     var corpoTabela = $(".placar").find("tbody");
     var usuario = "José"
@@ -8,6 +10,18 @@ function inserePlacar() {
 
  //Adiciona a linha como a mais recente na lista do placar.
     corpoTabela.prepend(linha);
+ //Animação de scroll para mostrar o placar
+    $(".placar").slideDown(500);
+    scrollPlacar();
+}
+
+function scrollPlacar() {
+    var posicaoPlacar = $(".placar").offset().top;
+
+    $("html, body").animate(
+    {
+        scrollTop: posicaoPlacar+"px"
+    }, 1000);
 }
 
 function novaLinha(usuario, palavras) {
@@ -32,5 +46,15 @@ function novaLinha(usuario, palavras) {
 
 function removeLinha() {
     event.preventDefault();
-    $(this).parent().parent().remove();
+    var linha = $(this).parent().parent();
+    linha.fadeOut(1000);
+    setInterval(function(){
+        linha.remove();   
+    },1000);
 }
+
+function mostraPlacar(){
+    //esconde e mostra o placar
+    $(".placar").stop().slideToggle(800);
+}
+
