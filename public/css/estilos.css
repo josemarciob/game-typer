@@ -7,6 +7,15 @@ body{
     text-align: left;
 }
 
+#spinner{
+    display: none;
+}
+
+#erro{
+    color: red;
+    display: none;
+}
+
 
 .campo-digitacao {
     font-size: 20px;
