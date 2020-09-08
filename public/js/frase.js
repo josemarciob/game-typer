@@ -2,9 +2,9 @@ $("#botao-frase").click(fraseAleatoria);
 
 function fraseAleatoria(){
 	$("#spinner").toggle();
-
+		//pegando as frases do servidor
 	$.get("http://localhost:3000/frases", trocaFraseAleatoria)
-	.fail(function(){
+	.fail(function(){  //caso houver erro no servidor ou  .get desconhecido, exibira mensagem de erro.
 		$("#erro").toggle();
 		setInterval(function(){
 			$("#erro").toggle();
