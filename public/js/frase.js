@@ -5,9 +5,7 @@ function fraseAleatoria(){
 	$("#spinner").toggle();
 		//pegando as frases do servidor
 	$.get("http://localhost:3000/frases", trocaFraseAleatoria)
-
 	.fail(function(){	 //caso houver erro no servidor ou  .get desconhecido, exibira mensagem de erro.
-
 		$("#erro").toggle();
 		setInterval(function(){
 			$("#erro").toggle();
@@ -26,8 +24,7 @@ function trocaFraseAleatoria(data){
 	atualizaTamanhoFrase();
 	atualizaTempoInicial(data[numeroAleatorio].tempo);
 }
-
-
+//
 function buscaFrase(){
 	$("#spinner").toggle();
 	var fraseId = $("#frase-id").val();
@@ -53,4 +50,3 @@ function trocaFrase(data){
 	atualizaTamanhoFrase();
 	atualizaTempoInicial(data.tempo);
 }
-
