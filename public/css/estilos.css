@@ -27,9 +27,6 @@ body{
     background-color: lightgray;
 }
 
-.icones {
-    vertical-align: middle;
-}
 
 .borda-verde {
     border: 3px solid green;
@@ -37,6 +34,18 @@ body{
 
 .borda-vermelha {
     border: 3px solid red;
+}
+
+.icones {
+    vertical-align: middle;
+}
+
+#frase-id{
+    width: 30px;
+}
+
+#botao-sync{
+    float: right;
 }
 
 .placar{
